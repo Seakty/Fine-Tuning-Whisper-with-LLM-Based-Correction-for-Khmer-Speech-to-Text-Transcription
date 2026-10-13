@@ -1,0 +1,27 @@
+# ffmpeg is also required, but it is a system program, not a pip package.
+
+# Bot / inference
+torch==2.11.0+cu130
+transformers==5.18.0
+peft==0.21.1
+accelerate==1.15.0
+librosa==0.11.0
+soundfile==0.14.0
+numpy==2.1.3
+python-telegram-bot>=20
+google-genai==2.12.1
+
+# Training, evaluation, data preparation (notebooks)
+datasets==4.8.5
+audiomentations==0.43.1
+jiwer==4.0.0
+pytest==8.4.2
+
+
+
+
+
+
+
+
+

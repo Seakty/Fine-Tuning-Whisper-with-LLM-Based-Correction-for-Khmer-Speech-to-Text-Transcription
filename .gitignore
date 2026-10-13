@@ -1,0 +1,38 @@
+# Secrets (never commit)
+.env
+*.env
+!.env.example
+
+# Data stays on Google Drive
+data/raw/
+data/processed/
+data/eval/
+*.wav
+*.ogg
+*.oga
+*.mp3
+*.flac
+*.m4a
+*.opus
+*.parquet
+*.arrow
+hf_cache/
+
+# Training checkpoints are large; keep only the final adapter
+models/checkpoints/*
+!models/checkpoints/final_adapter/
+models/checkpoints/final_adapter/training_args.bin
+*.pt
+*.pth
+
+# Python / tooling
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+*.log
+.vscode/
+.DS_Store
+Thumbs.db
